@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Jaan</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Cinzel:wght@400;500&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== STEP 1: COUNTDOWN PAGE ===== -->
+  <section id="countdown-page" class="page active">
+    <canvas id="stars-canvas"></canvas>
+    <div class="particles-container" id="particles"></div>
+
+    <div class="countdown-content">
+      <div class="crown-icon">👑</div>
+      <p class="countdown-subtitle">From Bilal</p>
+      <h1 class="countdown-title">Something special is<br>waiting for you, Aaiza ✨</h1>
+
+      <div class="timer-container">
+        <div class="timer-block">
+          <span class="timer-num" id="days">00</span>
+          <span class="timer-label">Days</span>
+        </div>
+        <div class="timer-divider">:</div>
+        <div class="timer-block">
+          <span class="timer-num" id="hours">00</span>
+          <span class="timer-label">Hours</span>
+        </div>
+        <div class="timer-divider">:</div>
+        <div class="timer-block">
+          <span class="timer-num" id="minutes">00</span>
+          <span class="timer-label">Minutes</span>
+        </div>
+        <div class="timer-divider">:</div>
+        <div class="timer-block">
+          <span class="timer-num" id="seconds">00</span>
+          <span class="timer-label">Seconds</span>
+        </div>
+      </div>
+
+      <p class="countdown-footer">23 March 2026 · 00:00</p>
+      <div class="petal-row">🌸 🌷 🌸</div>
+      <br>
+      <p class="countdown-title">Reopen the website after the countdown ends </p>
+    </div>
+  </section>
+
+  <!-- ===== STEP 2: LOGIN PAGE ===== -->
+  <section id="login-page" class="page">
+    <canvas id="login-canvas"></canvas>
+    <div class="login-content">
+      <div class="login-card">
+        <div class="lock-icon">🗝️</div>
+        <h2 class="login-heading">Are you the <span>Queen?</span></h2>
+        <p class="login-sub">Prove it, Ayiza 💫</p>
+
+        <div class="input-group">
+          <label>Your Name</label>
+          <input type="text" id="name-input" placeholder="Enter your name..." autocomplete="off" />
+        </div>
+        <div class="input-group">
+          <label>Secret Password</label>
+          <input type="password" id="pass-input" placeholder="Shhh, it's a secret..." autocomplete="off" />
+        </div>
+
+        <p class="error-msg" id="error-msg">Oops Queen, try again 💫</p>
+
+        <button class="login-btn" id="login-btn">
+          <span>Enter ✨</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STEP 3: LOADER PAGE ===== -->
+  <section id="loader-page" class="page">
+    <div class="loader-bg"></div>
+    <div class="loader-hearts" id="loader-hearts"></div>
+    <div class="loader-content">
+      <div class="loader-ring"></div>
+      <div class="loader-ring loader-ring-2"></div>
+      <div class="loader-ring loader-ring-3"></div>
+      <p class="loader-text">Wait Princess...</p>
+      <p class="loader-sub">Your surprise is being wrapped 🎁</p>
+      <div class="sparkles-row" id="sparkles-row"></div>
+    </div>
+  </section>
+
+  <!-- ===== STEP 4: SURPRISE PAGE ===== -->
+  <section id="surprise-page" class="page">
+    <canvas id="surprise-canvas"></canvas>
+    <div class="surprise-content">
+
+      <div class="lamp-container">
+        <div class="lamp-glow"></div>
+        <div class="lamp-body">
+          <div class="lamp-shade"></div>
+          <div class="lamp-stem"></div>
+          <div class="lamp-base"></div>
+        </div>
+        <div class="flame-container">
+          <div class="flame flame-main"></div>
+          <div class="flame flame-inner"></div>
+        </div>
+        <div class="candle-body">
+          <div class="candle-wick"></div>
+          <div class="wax-drip"></div>
+        </div>
+      </div>
+
+      <div class="wish-card">
+        <div class="wish-top-deco">✦ ✦ ✦</div>
+        <h2 class="happy-bday">Happy Birthday</h2>
+        <h1 class="queen-name">Ayiza</h1>
+        <div class="cake-icon">🎂</div>
+        <p class="wish-message">
+          May this Year bring you all the happiness and all your wishes become true insha Allah 🙂
+          I wanted to say a lot more, but that would maybe make you feel uncomfortable maybe, but Khair!! I'm so blessed that we're friends, Stay Blessed Ayiza!  
+        </p>
+        <div class="wish-divider">— 🌹 —</div>
+        <p class="from-text">Just a friend, <span>Bilal Gandu</span></p>
+        <div class="wish-bottom-deco">🌸 🌷 🌸 🌷 🌸</div>
+      </div>
+
+      <div class="balloons-row">
+        <div class="balloon b1">🎈</div>
+        <div class="balloon b2">🎈</div>
+        <div class="balloon b3">🎈</div>
+      </div>
+
+      <div class="confetti-container" id="confetti"></div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
