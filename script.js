@@ -18,7 +18,7 @@ function showPage(id) {
 // ===== STEP 1 — COUNTDOWN =====
 // ===== STEP 1 — COUNTDOWN =====
 (function initCountdown() {
-  const target = new Date('2026-03-15T00:00:00');
+  const target = new Date('2026-03-23T00:00:00');
 
   function pad(n) { return String(n).padStart(2, '0'); }
 
